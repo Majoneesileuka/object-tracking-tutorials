@@ -21,9 +21,9 @@ int main()
 
 	// Create video writer object
 	cv::VideoWriter output(	"output.avi", 
-							cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), 
-							30, 
-							cv::Size(frameWidth, frameHeigth));
+				cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), 
+				30, 
+				cv::Size(frameWidth, frameHeigth));
 
 	// Create multi tracker, select region-of-interests (ROIs) and initialize the trackers
 	video.read(frame);
