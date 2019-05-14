@@ -2,8 +2,7 @@
 #include "opencv2\highgui.hpp"
 #include "opencv2\tracking.hpp"
 
-int main()
-{
+int main() {
 
 	// Create video capturing object
 	// 0 opens default camera, otherwise filename as argument
@@ -29,8 +28,7 @@ int main()
 	tracker->init(frame, trackingBox);
 
 	// Loop through available frames
-	while (video.read(frame))
-	{
+	while (video.read(frame)) {
 
 		// Update the tracker and draw the rectangle around target if update was successful
 		if (tracker->update(frame, trackingBox)) {
