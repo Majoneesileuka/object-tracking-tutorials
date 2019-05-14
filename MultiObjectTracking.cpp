@@ -2,8 +2,7 @@
 #include "opencv2\highgui.hpp"
 #include "opencv2\tracking.hpp"
 
-int main()
-{
+int main() {
 
 	// Create video capturing object
 	// 0 opens default camera, otherwise filename as argument
