@@ -22,8 +22,7 @@ int main()
 	cv::VideoWriter output("output.avi", cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), 30, cv::Size(frameWidth, frameHeigth));
 
 	// Loop through available frames
-	while (video.read(frame))
-	{
+	while (video.read(frame)) {
 
 		// Display the frame
 		cv::imshow("Video feed", frame);
